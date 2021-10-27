@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 //API
 import API from '../API'
 import { isPersistedState } from "../helpers";
+import { Movies } from "../Movies.model";
 
-const initialState = {
+const initialState: Movies = {
     page:0,
     results: [],
     total_pages: 0,
@@ -19,7 +20,7 @@ export const useHomeFetch =() => {
     const [error, setError] = useState(false);
     const [isLoadingMore, setIsLoadingMore] = useState(false);
 
-    const fetchMovies = async(page, searchTerm= "") => {
+    const fetchMovies = async(page: number, searchTerm= "") => {
         try {
             setError(false);
             setLoading(true)
