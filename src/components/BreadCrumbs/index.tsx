@@ -1,12 +1,15 @@
 import React from "react";
-import PropTypes from 'prop-types';
 
 import { Link } from "react-router-dom";
 
 //styles
 import { Wrapper, Content } from "./BreadCrumbs.styles";
 
-const BreadCrumbs = ({movieTitle}) => (
+type Props = {
+    movieTitle: string,
+}
+
+const BreadCrumbs: React.FC<Props> = ({movieTitle}) => (
     <Wrapper>
         <Content>
             <Link to='/'>
@@ -17,9 +20,5 @@ const BreadCrumbs = ({movieTitle}) => (
         </Content>
     </Wrapper>
 );
-
-BreadCrumbs.propTypes = {
-    movieTitle: PropTypes.string
-}
 
 export default BreadCrumbs;

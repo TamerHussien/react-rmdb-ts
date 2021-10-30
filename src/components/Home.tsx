@@ -15,7 +15,7 @@ import { useHomeFetch } from "../hooks/useHomeFetch";
 
 import NoImage from '../images/no_image.jpg'
 
-const Home = () => {
+const Home: React.FC = () => {
     const {state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore} = useHomeFetch();
     const results = state?.results;
     const hero = results[0];
