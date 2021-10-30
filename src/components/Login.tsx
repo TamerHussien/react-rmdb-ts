@@ -45,7 +45,6 @@ const Login: React.FC = () => {
 
     return (
         <Wrapper>
-            {error && <div className="error">There was an error!</div>}
             <label htmlFor="username">Username:</label>
             <input
                 type='text'
@@ -62,6 +61,7 @@ const Login: React.FC = () => {
                 id='password'
                 onChange={handelInput}
             />
+            {error && <div className="error">There was an error!</div>}
             <ShowMoreButton text="Login" callback={handelSubmit}/>
         </Wrapper>
     )
