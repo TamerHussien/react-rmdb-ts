@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Site
+You can visit [https://tamer-rmdb-ts.netlify.app/](https://tamer-rmdb-ts.netlify.app/) to view it live on the browser.
 ## Available Scripts
 
 In the project directory, you can run:
